@@ -31,3 +31,4 @@ The starter `.gitignore` had spaces at the start of most lines. Git treats those
 - I allowed Claude to run test but I don't allow Claude to open or edit the .env file, neither to do git push
 - I confirmed CLAUDE.md it contains all necessary information
 - How can I run a test? Run npm test for the whole suite, or node --test tests/users.test.js for one file.
+

@@ -23,3 +23,4 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - "node_modules" contains the modules for NodeJS
 - "routes/<resource>.js" holds the HTTP handling and validation for one resource.
 - "tests" contains the test cases 
+
