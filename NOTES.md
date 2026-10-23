@@ -4,7 +4,6 @@
 
 I kept the four parts the project asks for: a one-line description, the commands, the conventions and the architecture. The commands include how to run a single test file or a single named test, because that's the command Claude can't guess from `package.json`. The conventions are rules taken from the existing code and written as "use X, not Y":
 
-- CommonJS, not ES modules.
 - `node:test` + `supertest`, not Jest.
 - One router per resource.
 - Data access only through `db/store.js`.
