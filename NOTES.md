@@ -4,6 +4,7 @@
 
 I kept the four parts the project asks for: a one-line description, the commands, the conventions and the architecture. The commands include how to run a single test file or a single named test, because that's the command Claude can't guess from `package.json`. The conventions are rules taken from the existing code and written as "use X, not Y":
 
+- CommonJS, not ES modules.
 - `node:test` + `supertest`, not Jest.
 - One router per resource.
 - Data access only through `db/store.js`.
@@ -26,9 +27,9 @@ Without the deny rules, Claude could read `.env` while exploring the project. Th
 
 The starter `.gitignore` had spaces at the start of most lines. Git treats those spaces as part of the pattern, so `.env` and `.claude/settings.local.json` were **not** actually ignored. I removed the spaces and confirmed with `git check-ignore`.
 
-## Own comments
+## Verification
 
-- I allowed Claude to run test but I don't allow Claude to open or edit the .env file, neither to do git push
-- I confirmed CLAUDE.md it contains all necessary information
-- How can I run a test? Run npm test for the whole suite, or node --test tests/users.test.js for one file.
+- `/memory`: I confirm CLAUDE.md shows as loaded
+- `/permissions`: I can confirm the allow / ask / deny rules are listed
+- Asked "How do I run the tests here?": I conform the answer came from CLAUDE.md
 
